@@ -1,0 +1,76 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(./SUNSET\ 2.jpg);
+    background-size: cover;
+    font-family: sans-serif;
+}
+
+.menu-bar{
+    background: #220f57a1;
+    text-align: center;
+}
+
+.menu-bar ul{
+    display: inline-flex;
+    list-style: none;
+    color: white;
+}
+
+.menu-bar ul li{
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+}
+
+.menu-bar ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+ .active, .menu-bar ul li:hover{
+    background: violet;
+    border-radius: 3px;
+}
+
+.sub-menu-1{
+    display: none;
+}
+
+.menu-bar ul li:hover .sub-menu-1{
+    display: block;
+    position: absolute;
+    background: rgba(38, 22, 131, 0.623);
+    margin-top: 12px;
+    margin-left: -12px;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul{
+    display: block;
+    margin: 10px;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted white;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child{
+    border-bottom: none;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul a:hover{
+    color: violet;
+}
+
+.sub-menu-1 ul li a{
+    font-size: 12px;
+}
